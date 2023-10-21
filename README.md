@@ -1,8 +1,8 @@
 # App Name
 
-This is a brief description of the app.
+This is a survey web page built with react and tailwindcss.
 
-## Installation
+## Running the app
 
 To install the app, run the following commands:
 
