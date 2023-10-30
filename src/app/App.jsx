@@ -115,8 +115,8 @@ const App = () => {
 
 
     return (
-        <main className="h-screen grid place-content-center p-2 bg-gradient-to-b from-white via-red-400 to-primary font-jakarta">
-            <div className="p-6 bg-white/25 backdrop-blur-md rounded-md relative min-w-[240px] w-full sm:w-[480px]">
+        <main className="h-screen flex justify-center items-center p-2 bg-gradient-to-b from-white via-red-400 to-primary font-jakarta">
+            <div className="p-6 bg-white/25 backdrop-blur-md rounded-md relative max-w-[480px] container">
 
                 {!isSubmitted && (
                     <>
