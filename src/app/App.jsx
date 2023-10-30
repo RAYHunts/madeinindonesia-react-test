@@ -86,6 +86,13 @@ const App = () => {
         return `${minutes}m ${remainingSeconds}s`;
     };
 
+    const reset = () =>{
+        setStep(1);
+        setFormData({});
+        setTimer(300);
+        setIsSubmitted(false);
+    }
+
     useEffect(() => {
         localStorage.setItem("formData", JSON.stringify(formData));
         localStorage.setItem("timer", timer.toString());
@@ -197,10 +204,7 @@ const App = () => {
                         <button
                             className="px-4 py-2 text-sm sm:text-lg font-medium text-white bg-primary rounded-md hover:bg-primary/90"
                             onClick={() => {
-                                setStep(1);
-                                setFormData({});
-                                setTimer(300);
-                                setIsSubmitted(false);
+                                reset()
                             }}
                         >
                             Restart
